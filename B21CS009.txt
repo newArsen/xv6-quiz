@@ -1,0 +1,152 @@
+# XV Quiz (CSL 3030)
+
+Welcome to the XV Quiz for CSL 3030 - Operating Systems!
+
+
+
+## Instructions
+- Answer the multiple-choice questions by selecting the correct option.
+- For theoretical questions, provide concise and accurate explanations.
+- Feel free to use this quiz for self-assessment or educational purposes.
+
+## Multiple-Choice Questions
+
+#### Question 1: Basics
+1. What is XV6?
+   - a. A programming language
+   - b. A Unix-like operating system
+   - c. A file system
+   - d. An assembly language
+
+#### Question 2: Architecture
+2. XV6 is based on which earlier operating system?
+   - a. Windows
+   - b. Linux
+   - c. BSD
+   - d. DOS
+
+#### Question 3: File System
+3. Which file system is used in XV6?
+   - a. FAT32
+   - b. NTFS
+   - c. ext4
+   - d. simple
+
+#### Question 4: System Calls
+4. How are system calls implemented in XV6?
+   - a. As functions in the C standard library
+   - b. As interrupts
+   - c. Through the command line
+   - d. As external programs
+
+#### Question 5: Processes
+5. In XV6, what is the maximum number of processes that can run simultaneously?
+   - a. 128
+   - b. 256
+   - c. 512
+   - d. 1024
+
+#### Question 6: Shell
+6. What is the name of the shell used in XV6?
+   - a. Bash
+   - b. Zsh
+   - c. Sh
+   - d. Fish
+
+#### Question 7: Scheduling
+7. How does XV6 handle process scheduling?
+   - a. Round-robin scheduling
+   - b. Priority-based scheduling
+   - c. First-Come-First-Serve (FCFS)
+   - d. Random scheduling
+
+#### Question 8: Memory Management
+8. Which memory management technique is used in XV6?
+   - a. Paging
+   - b. Segmentation
+   - c. Virtual Memory
+   - d. None of the above
+
+#### Question 9: Interrupts
+9. How are interrupts handled in XV6?
+   - a. Through polling
+   - b. Using hardware interrupts
+   - c. Using software interrupts
+   - d. Both b and c
+
+#### Question 10: Multithreading
+10. Does XV6 support multithreading?
+    - a. Yes
+    - b. No
+
+#### Bonus Question:
+11. Who developed XV6?
+    - a. Microsoft
+    - b. Google
+    - c. MIT
+    - d. IBM
+
+## Theoretical Questions
+
+#### Question 12: Process States
+12. Briefly explain the different states a process can be in within the XV6 operating system.
+
+#### Question 13: File System Structure
+13. Describe the structure of the file system in XV6. Include the key components and their roles.
+
+#### Question 14: System Calls vs. Library Functions
+14. Explain the difference between system calls and library functions in the context of XV6. Provide examples of each.
+
+#### Question 15: Memory Paging
+15. How does memory paging work in XV6? Discuss the benefits of using paging in memory management.
+
+#### Question 16: Shell Commands
+16. Name and briefly explain three essential shell commands in the XV6 operating system.
+
+#### Question 17: Process Synchronization
+17. Discuss the concept of process synchronization in XV6. Why is it essential, and what mechanisms are used to achieve it?
+
+#### Question 18: Interrupt Handling
+18. Explain the role of interrupts in the XV6 operating system. How are interrupts handled, and what is their significance in system operation?
+
+#### Question 19: Virtual Memory
+19. What is virtual memory, and how is it implemented in XV6? Discuss the advantages of using virtual memory.
+
+#### Question 20: Boot Process
+20. Outline the steps involved in the boot process of XV6. What happens from the moment the computer is powered on to when the XV6 kernel is loaded into memory?
+
+## Answers
+1. b. A Unix-like operating system
+2. c. BSD
+3. d. simple
+4. b. As interrupts
+5. a. 128
+6. c. Sh
+7. a. Round-robin scheduling
+8. a. Paging
+9. d both a and b
+10. b. No
+11. c. MIT
+
+12. In XV6, a process can exist in three states: RUNNABLE, SLEEPING, or UNUSED. When a process is RUNNABLE, it's ready to execute; in the SLEEPING state, it's waiting for an event or resource, and UNUSED means the process is not currently in use.
+
+13. XV6's file system follows a hierarchical structure with a root directory ("/"). It comprises inodes representing files, a directory structure, and a file allocation table (FAT) for file organization.
+
+14. System calls in XV6 are requests made by a program to the OS for specific services. Examples include `fork()` for process creation. On the other hand, library functions like `printf()` are pre-compiled routines provided by libraries for common tasks.
+
+15. Memory paging in XV6 involves breaking physical memory into fixed-size blocks (pages). Paging enhances memory utilization and simplifies management, providing efficient virtual memory implementation.
+
+16. Three essential shell commands in XV6 are:
+   - `ls`: Lists directory contents.
+   - `cd`: Changes the current directory.
+   - `cp`: Copies files or directories.
+
+17. Process synchronization in XV6 is crucial to prevent conflicts and ensure data consistency. Mechanisms like mutex locks, semaphores, and conditional variables are employed for this purpose.
+
+18. Interrupts in XV6 are managed through interrupt service routines (ISRs) and the interrupt descriptor table (IDT). They play a vital role in handling external events and ensuring timely system responses.
+
+19. Virtual memory in XV6 allows processes to use more memory than physically available, implemented through paging. This provides benefits such as process isolation and efficient memory utilization.
+
+20. The XV6 boot process involves hardware initialization, bootloader loading (e.g., GRUB), kernel loading into memory, and control transfer to the kernel. The kernel then initializes the system, mounts the root file system, and starts the init process.
+
+
